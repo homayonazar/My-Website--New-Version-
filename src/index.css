@@ -1,5 +1,4 @@
 @import "tailwindcss";
-             /* utilities همون قبلی */
 
 body {
     background-color: var(--bg);
@@ -21,7 +20,7 @@ body {
     --text: #000000;
     --myGreen: #d8efee;
     --myBlue: #d9ebf6;
-    --table: #e8e8e8 ;
+    --texttitle: #504e70 ;
     --comment : #f2f2f2 ;
     --navbar: #ebebeb ;
     --myFONT-w: #ffffff;
@@ -39,7 +38,7 @@ body {
     --myGreen: #1d2b2a;
     --myBlue: #3e5666;
     --navbar: #414a4b ;
-    --table: #424b4c ;
+    --texttitle: #d3f8fc ;
     --comment : #1d2b2a ;
     --myFontColor: #90e0ef;
     --myWhite: #0f2027;
@@ -48,9 +47,9 @@ body {
     --textColor: #ffffff;
 }
 
-p ,li,h2,span , h1 {
+/* p ,li,h2,span , h1 {
     color: var(--text);
-} 
+}  */
 
 
 

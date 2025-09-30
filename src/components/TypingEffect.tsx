@@ -21,7 +21,7 @@ function TypingEffect() {
   return (
     <span
       ref={el}
-      className="typing text-2xl font-semibold text-blue-600"
+      className="typing text-2xl font-semibold text-[var(--skin)]"
     ></span>
   );
 }
