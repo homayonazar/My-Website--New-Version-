@@ -1,10 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBriefcase, faComments, faHouse, faUser } from '@fortawesome/free-solid-svg-icons'
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function SideMenu() {
-
     const [darkMode, setDarkMode] = useState(() => {
         const saved = localStorage.getItem("theme");
         return saved ? saved === "dark" : false;
@@ -21,11 +20,6 @@ function SideMenu() {
         }
     }, [darkMode]);
 
-
-
-
-
-
     return (
         <div>
             <div className="fixMenu fixed w-[270px] h-full flex flex-col items-center bg-[var(--bgside)] ">
@@ -34,36 +28,33 @@ function SideMenu() {
                 <div className="absolute w-6 h-6 border-t-[5px] border-l-[5px] border-[var(--skin)] left-5 top-11"></div>
                 <br /><br />
                 <ul className="space-y-4 text-lg mt-35">
-                    <li className="flex items-center gap-2 border-b border-gray-300 hover:underline cursor-pointer">
-                        <Link to="/" className="flex items-center gap-2 w-full">
+                    <li className="flex items-center gap-2 border-b border-[var(--border)] hover:underline cursor-pointer">
+                        <NavLink to="/" className={({ isActive }) => `flex items-center pb-1 gap-2 w-full ${isActive ? "text-[var(--skin)]" : "text-[var(--border)]"}`}>
                             <FontAwesomeIcon icon={faHouse} /> Home
-                        </Link>
+                        </NavLink>
                     </li>
-
-                    <li className="flex items-center gap-2 border-b border-gray-300 hover:underline cursor-pointer">
-                        <Link to="/portfolio" className="flex items-center gap-2 w-full">
+                    <li className="flex items-center gap-2 border-b border-[var(--border)] hover:underline cursor-pointer">
+                        <NavLink to="/portfolio" className={({ isActive }) => `flex items-center pb-1 gap-2 w-full ${isActive ? "text-[var(--skin)]" : "text-[var(--border)]"}`}>
                             <FontAwesomeIcon icon={faBriefcase} /> Portfolio
-                        </Link>
+                        </NavLink>
                     </li>
-
-                    <li className="flex items-center gap-2 border-b border-gray-300 hover:underline cursor-pointer">
-                        <Link to="/about" className="flex items-center gap-2 w-full">
+                    <li className="flex items-center gap-2 border-b border-[var(--border)] hover:underline cursor-pointer">
+                        <NavLink to="/about" className={({ isActive }) => `flex items-center pb-1 gap-2 w-full ${isActive ? "text-[var(--skin)]" : "text-[var(--border)]"}`}>
                             <FontAwesomeIcon icon={faUser} /> About
-                        </Link>
+                        </NavLink>
                     </li>
-
-                    <li className="flex items-center gap-2 border-b border-gray-300 hover:underline cursor-pointer">
-                        <Link to="/contact" className="flex items-center gap-2 w-full">
+                    <li className="flex items-center gap-2 border-b border-[var(--border)] hover:underline cursor-pointer">
+                        <NavLink to="/contact" className={({ isActive }) => `flex items-center pb-1 gap-2 w-full ${isActive ? "text-[var(--skin)]" : "text-[var(--border)]"}`}>
                             <FontAwesomeIcon icon={faComments} /> Contact
-                        </Link>
+                        </NavLink>
                     </li>
                 </ul>
-                <button className='mt-10 cursor-pointer' onClick={() => setDarkMode(!darkMode)}>
+                <button className="mt-10 cursor-pointer text-[var(--border)]" onClick={() => setDarkMode(!darkMode)}>
                     {darkMode ? "Light Mode" : "Dark Mode"}
                 </button>
             </div>
         </div>
-    )
+    );
 }
 
-export default SideMenu
+export default SideMenu;
