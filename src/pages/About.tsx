@@ -53,8 +53,8 @@ export default function About() {
 
                             </div>
                             <div className="Buttons flex flex-row gap-5 ms-10">
-                                <a href="https://github.com/homayonazar" target="_blank" rel="noopener noreferrer"><div className="btn1 mt-5 bg-[var(--skin)] text-white w-35 p-3 rounded-4xl text-center text-xl hover:scale-105 duration-300">GitHub</div></a>
-                                <a href="https://www.linkedin.com/in/homayonazar" target="_blank" rel="noopener noreferrer"><div className="btn2 mt-5 bg-[var(--skin)] text-white w-35 p-3 rounded-4xl text-center text-xl hover:scale-105 duration-300">Linkedin</div></a>
+                                <a href="https://github.com/homayonazar" target="_blank" rel="noopener noreferrer"><div className="btn1 mt-5 bg-[var(--skin)] text-white w-35 p-3 rounded-4xl text-center text-xl hover:scale-105 duration-300 cursor-pointer">GitHub</div></a>
+                                <a href="https://www.linkedin.com/in/homayonazar" target="_blank" rel="noopener noreferrer"><div className="btn2 mt-5 bg-[var(--skin)] text-white w-35 p-3 rounded-4xl text-center text-xl hover:scale-105 duration-300 cursor-pointer">Linkedin</div></a>
                             </div>
                         </div>
                         <div className="rightSec w-1/2 h-auto rounded-2xl mt-5 p-6">
