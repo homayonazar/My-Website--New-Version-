@@ -10,8 +10,8 @@ export default function Home() {
             <div>
                 <SideMenu />
 
-                <div className="flex justify-center flex-row items-center">
-                    <div className="ml-[270px] max-w-300 ">
+                <div className="flex justify-center flex-row items-center  pt-12">
+                    <div className="w-full xl:ml-[270px] max-w-[1150px] ">
                         <div className="mainSection flex flex-row justify-center  content-center gap-1">
                             <div className="p-10 w-2/3 pt-30">
                                 <h2 className="text-3xl text-left my-5 text-[var(--text)]">HELLO , My name is <span className="red-force text-4xl text-[var(--skin)] font-bold">Amirreza Abdollahi</span></h2>

@@ -7,8 +7,8 @@ export default function Contact() {
     return (
         <div>
             <SideMenu />
-            <div className="CONTACT">
-                <div className="contact ml-[270px] max-w-300 ">
+            <div className="CONTACT flex justify-center pt-12">
+                <div className="contact w-full xl:ml-[270px] max-w-[1150px] ">
                     <div className="text-4xl font-bold p-10  text-[var(--texttitle)] ">
                         <p className="text-4xl font-bold  text-[var(--texttitle)]">Contact</p>
                         <div className="ddd border-t-4 w-[60px] border-[var(--skin)]"></div>

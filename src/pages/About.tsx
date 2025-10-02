@@ -9,8 +9,8 @@ export default function About() {
     return (
         <div>
             <SideMenu />
-            <div className="ABOUT flex justify-center">
-                <div className="About ml-[270px] max-w-300">
+            <div className="ABOUT flex justify-center pt-12">
+                <div className="About w-full xl:ml-[270px] max-w-[1150px]">
                     <h2 className="text-4xl font-bold p-10 block">
                         <p className="text-4xl text-[var(--texttitle)]">About me</p>
                         <div className="ddd border-t-4 w-[60px] border-[var(--skin)]"></div>

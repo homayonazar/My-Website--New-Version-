@@ -18,8 +18,8 @@ export default function Protfolio() {
     return (
         <>
             <SideMenu />
-            <div className="flex justify-center flex-row items-center">
-                <div className="PortFolio ml-[270px] max-w-300 ">
+            <div className="flex justify-center flex-row items-center pt-12">
+                <div className="PortFolio w-full xl:ml-[270px] max-w-[1150px]">
                     <div className="PortfolioText">
                         <h2 className="text-4xl font-bold p-10 block">
                             <p className="text-4xl font-bold text-[var(--texttitle)]">Portfolio</p>
