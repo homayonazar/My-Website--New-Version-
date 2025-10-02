@@ -16,8 +16,8 @@ export default function About() {
                         <div className="ddd border-t-4 w-[60px] border-[var(--skin)]"></div>
                         <div className="ddd border-t-4 w-[30px] mt-1 border-[var(--skin)]"></div>
                     </h2>
-                    <p className="text-2xl font-bold ps-10 ">About My <span className="text-[var(--skin)]"> Expertise</span></p>
-                    <p className="px-10 pt-5">In this section, you will get to know my background, skills, and an overview of who I am.
+                    <p className="text-2xl font-bold ps-10  text-[var(--text)]">About My <span className="text-[var(--skin)]"> Expertise</span></p>
+                    <p className="px-10 pt-5  text-[var(--text)]">In this section, you will get to know my background, skills, and an overview of who I am.
                         My main focus here is to share the knowledge and expertise I have gained so far. This includes the tools and technologies
                         I’ve mastered, the projects I’ve worked on, and my journey as a front-end developer. My aim is to give you a
                         clear understanding of what I bring to the table and how I can contribute to your projects or ideas.
@@ -27,28 +27,28 @@ export default function About() {
                         <div className="leftSecMain leftSec w-3/4 h-80  rounded-2xl flex flex-col mt-5 ">
                             <div className="leftSec  h-80  rounded-2xl flex flex-row " >
                                 <div className="left1 w-1/2 pe-10">
-                                    <p className="font-bold ">Website : </p><span className="block pb-2 border-b-1 border-gray-300">www.homayonazar.com</span>
+                                    <p className="font-bold  text-[var(--text)]">Website : </p><span className="block pb-2 border-b-1 border-gray-300 text-[var(--text)]">www.homayonazar.com</span>
                                 </div>
                                 <div className="right1 w-1/2 ">
-                                    <p className="font-bold ">E-mail : </p><span className="block pb-2 border-b-1 border-gray-300">contact@homayonazar.com</span>
+                                    <p className="font-bold  text-[var(--text)]">E-mail : </p><span className="block pb-2 border-b-1 border-gray-300 text-[var(--text)]">contact@homayonazar.com</span>
                                 </div>
 
                             </div>
                             <div className="leftSec h-80 rounded-2xl flex flex-row " >
                                 <div className="left1 w-1/2 pe-10">
-                                    <p className="font-bold">Phone Number : </p><span className="block pb-2 border-b-1 border-gray-300">+90 XXX XXX XX XX</span>
+                                    <p className="font-bold text-[var(--text)]">Phone Number : </p><span className="block pb-2 border-b-1 text-[var(--text)] border-gray-300">+90 XXX XXX XX XX</span>
                                 </div>
                                 <div className="right1 w-1/2">
-                                    <p className="font-bold">Location :</p><span className="block pb-2 border-b-1 border-gray-300">Istanbul, Turkey</span>
+                                    <p className="font-bold text-[var(--text)]">Location :</p><span className="block pb-2 border-b-1 text-[var(--text)] border-gray-300">Istanbul, Turkey</span>
                                 </div>
 
                             </div>
                             <div className="leftSec h-80 rounded-2xl flex flex-row " >
                                 <div className="left1 w-1/2 pe-10">
-                                    <p className="font-bold">Specialization : </p><span className="block pb-2 border-b-1 border-gray-300">Front-End Development, Responsive Design</span>
+                                    <p className="font-bold text-[var(--text)]">Specialization : </p><span className="block pb-2 border-b-1 text-[var(--text)] border-gray-300">Front-End Development, Responsive Design</span>
                                 </div>
                                 <div className="right1 w-1/2 pe-10">
-                                    <p className="font-bold">Work Experience : </p><span className="block pb-2 border-b-1 border-gray-300">5+ Years in Front-End Development</span>
+                                    <p className="font-bold text-[var(--text)]">Work Experience : </p><span className="block pb-2 border-b-1 text-[var(--text)] border-gray-300">5+ Years in Front-End Development</span>
                                 </div>
 
                             </div>
@@ -62,8 +62,8 @@ export default function About() {
                                 {skills.map((skill, index) => (
                                     <div key={index} className="skill-item">
                                         <div className="flex justify-between mb-2">
-                                            <h5 className="text-base font-semibold">{skill.name}</h5>
-                                            <span className="text-sm font-medium text-gray-800">{skill.percent}%</span>
+                                            <h5 className="text-base font-semibold text-[var(--text)]">{skill.name}</h5>
+                                            <span className="text-sm font-medium  text-[var(--text)]">{skill.percent}%</span>
                                         </div>
                                         <div className="relative w-full h-[7px] bg-gray-200 rounded-md">
                                             <div className="absolute left-0 top-0 h-full rounded-md bg-[var(--skin)]"

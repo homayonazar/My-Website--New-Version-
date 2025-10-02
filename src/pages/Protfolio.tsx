@@ -26,10 +26,10 @@ export default function Protfolio() {
                             <div className="ddd border-t-4 w-[60px] border-[var(--skin)]"></div>
                             <div className="ddd border-t-4 w-[30px] mt-1 border-[var(--skin)]"></div>
                         </h2>
-                        <span className="p-5">
+                        <p className="p-10 text-[var(--text)]">
                             Below are some of the frontend projects I’ve developed. I focused on writing clean HTML, CSS,
                             and JavaScript to create responsive and user-friendly interfaces.
-                        </span>
+                        </p>
                         <div className="Gallery mt-5">
                             <div className="upperRow flex flex-row gap-5 px-10">
                                 <div className="box1">
