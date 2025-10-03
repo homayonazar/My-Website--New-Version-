@@ -22,12 +22,23 @@ function SideMenu() {
         }
     }, [darkMode]);
 
+
+    const changeSkinColor = (color: string) => {
+        document.documentElement.style.setProperty("--skin", color);
+        localStorage.setItem("skin", color);
+    };
+
+    useEffect(() => {
+        const savedSkin = localStorage.getItem("skin");
+        if (savedSkin) {
+            document.documentElement.style.setProperty("--skin", savedSkin);
+        }
+    }, []);
+
     return (
         <div>
-            <div
-                className="hamburgerMEnu fixed top-10 left-10 p-2  bg-[var(--bgside)] border-1 border-[var(--text)] rounded-lg cursor-pointer xl:hidden z-50"
-                onClick={() => setIsOpen(!isOpen)}>
-                <FontAwesomeIcon icon={faBars} className="text-2xl text-[var(--text)]" />
+            <div className="hamburgerMEnu fixed top-7 left-10 p-2  bg-[var(--bgside)]   rounded-sm cursor-pointer xl:hidden z-50" onClick={() => setIsOpen(!isOpen)}>
+                <FontAwesomeIcon icon={faBars} className="text-2xl text-[var(--skin)]" />
             </div>
 
             <div
@@ -63,12 +74,12 @@ function SideMenu() {
                     <button className="mt-10 cursor-pointer text-[var(--border)]" onClick={() => setDarkMode(!darkMode)}>
                         {darkMode ? <p className='bg-[var(--texttitle)] text-[var(--bg)] rounded p-1  transition-transform duration-300 hover:scale-95 '>Light Mode</p> : <p className='bg-[var(--texttitle)] text-[var(--bg)] rounded p-1  transition-transform duration-300 hover:scale-95'>Dark Mode</p>}
                     </button>
-                    <div className="colorsBox flex flex-row justify-between mt-4 gap-3">
-                        <div className="red bg-[#ec1839] p-4 rounded cursor-pointer transition-transform duration-200 hover:scale-120 hover:active:rotate-20" />
-                        <div className="orange bg-[#fa5b0f] p-4 rounded cursor-pointer transition-transform duration-200 hover:scale-120 hover:active:rotate-20" />
-                        <div className="green bg-[#36b182] p-4 rounded cursor-pointer transition-transform duration-200 hover:scale-120 hover:active:rotate-20" />
-                        <div className="blue bg-[#1854b4] p-4 rounded cursor-pointer transition-transform duration-200 hover:scale-120 hover:active:rotate-20" />
-                        <div className="pink bg-[#f021b2] p-4 rounded cursor-pointer transition-transform duration-200 hover:scale-120 hover:active:rotate-20" />
+                     <div className="colorsBox flex flex-row justify-between mt-4 gap-3">
+                        <div onClick={() => changeSkinColor("#ec1839")} className="red bg-[#ec1839] p-4 rounded cursor-pointer transition-transform duration-200 hover:scale-110 hover:active:rotate-25" />
+                        <div onClick={() => changeSkinColor("#fa5b0f")} className="orange bg-[#fa5b0f] p-4 rounded cursor-pointer transition-transform duration-200 hover:scale-110 hover:active:rotate-25" />
+                        <div onClick={() => changeSkinColor("#36b182")} className="green bg-[#36b182] p-4 rounded cursor-pointer transition-transform duration-200 hover:scale-110 hover:active:rotate-25" />
+                        <div onClick={() => changeSkinColor("#1854b4")} className="blue bg-[#1854b4] p-4 rounded cursor-pointer transition-transform duration-200 hover:scale-110 hover:active:rotate-25" />
+                        <div onClick={() => changeSkinColor("#f021b2")} className="pink bg-[#f021b2] p-4 rounded cursor-pointer transition-transform duration-200 hover:scale-110 hover:active:rotate-25" />
                     </div>
                 </div>
             </div>
