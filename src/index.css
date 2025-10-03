@@ -1,1 +1,76 @@
 @import "tailwindcss";
+
+body {
+    background-color: var(--bg);
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #f2f2fc;
+    --bgside: #fef9ff;
+    --text: #000000;
+    --myGreen: #d8efee;
+    --myBlue: #d9ebf6;
+    --texttitle: #504e70;
+    --comment: #f2f2f2;
+    --navbar: #ebebeb;
+    --myFONT-w: #ffffff;
+    --myFONT-B: #2e2e2e;
+    --myFontColor: #2aaac6;
+    --myWhite: #eff1f4;
+    --skin: #ec1839;
+    --border: #6a6a6a ;
+
+}
+
+.dark {
+    --bg: #151515;
+    --bgside: #222222;
+    --text: #e1e1e1;
+    --myGreen: #1d2b2a;
+    --myBlue: #3e5666;
+    --navbar: #414a4b;
+    --texttitle: #d3f8fc;
+    --comment: #1d2b2a;
+    --myFontColor: #90e0ef;
+    --myWhite: #0f2027;
+    --myFONT-w: #0f2027;
+    --myFONT-B: #ffffff;
+    --textColor: #ffffff;
+    --border: #bababa ;
+}
+
+/* p ,li,h2,span , h1 {
+    color: var(--text);
+}  */
+
+
+
+.white-force {
+    color: white !important;
+}
+
+.yello-force {
+    color: rgb(255, 231, 78) !important;
+}
+
+.red-force {
+    color: rgb(255, 59, 59) !important;
+}
+
+.black-force {
+    color: rgb(0, 0, 0) !important;
+}
+
+.blue-force {
+    color: rgb(138, 112, 255) !important;
+}
