@@ -22,10 +22,10 @@ export default function About() {
                         I’ve mastered, the projects I’ve worked on, and my journey as a front-end developer. My aim is to give you a
                         clear understanding of what I bring to the table and how I can contribute to your projects or ideas.
                     </p>
-                    <div className="experienceSec w-full flex flex-row px-10 pt-5 gap-2">
+                    <div className="experienceSec w-full flex flex-col px-10 pt-5 gap-2 md:flex-row ">
 
-                        <div className="leftSecMain leftSec w-3/4 h-80  rounded-2xl flex flex-col mt-5 ">
-                            <div className="leftSec  h-80  rounded-2xl flex flex-row " >
+                        <div className="leftSecMain leftSec w-full h-80  rounded-2xl flex flex-col mt-5 md:w-3/4 ">
+                            <div className="leftSec  h-80  rounded-2xl flex flex-col sm:flex-row " >
                                 <div className="left1 w-1/2 pe-10">
                                     <p className="font-bold  text-[var(--text)]">Website : </p><span className="block pb-2 border-b-1 border-gray-300 text-[var(--text)]">www.homayonazar.com</span>
                                 </div>
@@ -57,7 +57,7 @@ export default function About() {
                                 <a href="https://www.linkedin.com/in/homayonazar" target="_blank" rel="noopener noreferrer"><div className="btn2 mt-5 bg-[var(--skin)] text-white w-35 p-3 rounded-4xl text-center text-xl hover:scale-105 duration-300 cursor-pointer">Linkedin</div></a>
                             </div>
                         </div>
-                        <div className="rightSec w-1/2 h-auto rounded-2xl mt-5 p-6">
+                        <div className="rightSec w-full rounded-2xl  mt-30 sm:mt-0  p-6 md:w-1/2 mb-10">
                             <div className="progressBar flex flex-col space-y-8">
                                 {skills.map((skill, index) => (
                                     <div key={index} className="skill-item">

@@ -15,8 +15,8 @@ const projects = [
   { img: img4, text: "Previous website with light theme" },
   { img: img5, text: "Calculator Project", url: "https://homayonazar.com/projects/Calculator/index.html" },
   { img: img6, text: "Shopping Project", url: "https://homayonazar.com/projects/Shooping_Project/" },
-  { img: img7, text: "Mega Shop (React) - Light", url: "https://homayonazar.com" },
-  { img: img8, text: "Mega Shop (React) - Dark", url: "https://homayonazar.com" },
+  { img: img7, text: "Mega Shop (React) - Light", url: "https://homayonazar.com/projects/Mega-Shop-Project/" },
+  { img: img8, text: "Mega Shop (React) - Dark", url: "https://homayonazar.com/projects/Mega-Shop-Project/" },
 //   { img: img9, text: "Mobile App Design", url: "https://homayonazar.com" },
 ];
 export default projects;

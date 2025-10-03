@@ -12,7 +12,6 @@ function App() {
         <Route path="/portfolio" element={<Protfolio />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-
       </Routes>
     </BrowserRouter>
   )
