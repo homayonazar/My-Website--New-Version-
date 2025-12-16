@@ -30,7 +30,7 @@ export default function Protfolio() {
                         <div className="Gallery mt-5">
                             <div className="upperRow grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-10 pb-10">
                                 {projects.map((project, index) => (
-                                    <PortfolioCard key={index} img={project.img} text={project.text} url={project.url} />
+                                    <PortfolioCard key={index} img={project.img} text={project.text} url={project.url} url2={project.url2}  />
                                 ))}
                             </div>
                         </div>

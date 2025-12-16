@@ -2,9 +2,10 @@ import SideMenu from "../components/SideMenu";
 
 export default function About() {
     const skills = [
-        { name: "HTML/CSS", percent: 90 },
-        { name: "JavaScript/TypeScript", percent: 70 },
-        // { name: "React", percent: 60 },
+        { name: "HTML/CSS", percent: 100 },
+        { name: "TailWind", percent: 100 },
+        { name: "JSX / TSX (React)", percent: 100 },
+        { name: "GitHub - Version Control", percent: 100 },
     ];
     return (
         <div>
@@ -52,18 +53,18 @@ export default function About() {
                                 </div>
 
                             </div>
-                            <div className="Buttons flex flex-row gap-5 ms-10">
+                            <div className="Buttons flex flex-row gap-5 ms-10 pb-20 sm:pb-0">
                                 <a href="https://github.com/homayonazar" target="_blank" rel="noopener noreferrer"><div className="btn1 mt-5 bg-[var(--skin)] text-white w-35 p-3 rounded-4xl text-center text-xl hover:scale-105 duration-300 cursor-pointer">GitHub</div></a>
                                 <a href="https://www.linkedin.com/in/homayonazar" target="_blank" rel="noopener noreferrer"><div className="btn2 mt-5 bg-[var(--skin)] text-white w-35 p-3 rounded-4xl text-center text-xl hover:scale-105 duration-300 cursor-pointer">Linkedin</div></a>
                             </div>
                         </div>
-                        <div className="rightSec w-full rounded-2xl  mt-30 sm:mt-0  p-6 md:w-1/2 mb-10">
+                        <div className="rightSec w-full rounded-2xl  mt-30 sm:mt-0  p-6 md:w-1/2 mb-10 hidden sm:block ">
                             <div className="progressBar flex flex-col space-y-8">
                                 {skills.map((skill, index) => (
                                     <div key={index} className="skill-item">
-                                        <div className="flex justify-between mb-2">
-                                            <h5 className="text-base font-semibold text-[var(--text)]">{skill.name}</h5>
-                                            <span className="text-sm font-medium  text-[var(--text)]">{skill.percent}%</span>
+                                        <div className="mb-2">
+                                            <h5 className="text-base font-semibold text-[var(--text)] text-center">{skill.name}</h5>
+                                            {/* <span className="text-sm font-medium  text-[var(--text)]"></span> */}
                                         </div>
                                         <div className="relative w-full h-[7px] bg-gray-200 rounded-md">
                                             <div className="absolute left-0 top-0 h-full rounded-md bg-[var(--skin)]"
