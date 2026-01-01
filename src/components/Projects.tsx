@@ -8,6 +8,7 @@ import img7 from "../assets/ProjectPhotos/Portfolio/mega-1.jpg"
 import img8 from "../assets/ProjectPhotos/Portfolio/mega-2.jpg"
 import img9 from "../assets/ProjectPhotos/Portfolio/Currency.jpg"
 import img10 from "../assets/ProjectPhotos/Portfolio/mobileApp.jpg"
+import image11 from "../assets/ProjectPhotos/Portfolio/arz1.jpg"
 
 const projects = [
   { img: img1, text: "This website with light theme", url: "https://homayonazar.com" , url2: "https://github.com/homayonazar/My-Website--New-Version-"  },
@@ -19,6 +20,8 @@ const projects = [
   { img: img7, text: "Mega Shop (React) - Light", url: "https://homayonazar.com/projects/Mega-Shop-Project/" , url2: "https://github.com/homayonazar/Mega-Shop-Project"  },
 //   { img: img8, text: "Mega Shop (React) - Dark", url: "https://homayonazar.com/projects/Mega-Shop-Project/"  , url2: "https://github.com/homayonazar/Mega-Shop-Project" },
   { img: img9, text: "Iran Currency WebPage", url: "https://homayonazar.com/projects/dolar_project/" , url2: "https://github.com/homayonazar/Dolar_project" },
-  { img: img10, text: "Weather WebApp SPA (React)" , url :"https://homayonazar.com/projects/weather/" , url2:"https://github.com/homayonazar/HavaApp"},
+  { img: img10, text: "Weather WebApp [PWA]" , url :"https://homayonazar.com/projects/weather/" , url2:"https://github.com/homayonazar/HavaApp"},
+{ img: image11, text: "Iran Live Currency [PWA]" , url :"https://dolar.homayonazar.com/" , url2:"https://github.com/homayonazar/Dolar_SPA"},
+
 ];
 export default projects;
